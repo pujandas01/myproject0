@@ -1,0 +1,101 @@
+<html>
+<head>
+    <title> Transparent Sign Up Form Design </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">   
+</head>
+    <body>
+    <div class="Signup">
+    
+        <h1>Sign up Here</h1>
+            <form>
+            <p>First Name</p>
+            <input type="text" placeholder="Enter First Name" id="fname" onblur="myFunction()">
+            <script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+            <p>Last Name</p>
+            <input type="text"  placeholder="Enter Last Name" id="lname" onblur="mineFunction()">
+            
+            <p>Mobile</p>
+            <input type="number" name="number" placeholder="Mobile" min="10" max="10">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="password" placeholder="Enter Password">
+            
+            <!-- <a href="#">Forget Password</a> -->   
+             
+            </form>
+        </div>
+    
+    <div class="information">
+    <h2>You May Add More Information</h2>
+    <form>
+    <p>Pl Enter your zip code</p>
+    <input type="="number" name="=zipcode" placeholder="So that we can serve better">
+    <p>Please enter the products you like the most,ex;TV,Phone,Fridge etc</p>
+    <label for="products">Choose the product 1</label>
+
+    <select id="products">
+  <option value="TV">TV</option>
+  <option value="Mobile">MOBILE</option>
+  <option value="Fridge">FRIDGE</option>
+  <option value="Laptop">LAPTOP</option>
+  </select>
+  
+  
+    <div class="Survey">
+    <h3>One Last Survey</h3>
+ 
+   <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+
+  <br>  
+
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  
+ </div>
+  <input type="button" value="Save" onclick="alert('Your Detais Saved succesfullly')">
+  
+    
+    </form>
+ <div class="about">
+    <h3>About Section</h3>
+
+<button onclick="typeWriter()">About</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Amazon is an American multinational conglomerate technology company based in Seattle with 750000 employees.It focuses on e-commerce cloud computing digital streaming and artificial intelligence It is considered one of the Big Four tech companies, along with Google Apple and Microsoft It has been referred to as one of the most influential economic and cultural forces in the world';
+var speed =60;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+    
+    <p>Contact us :91 8056056304</p>
+    
+    </div>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(image.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+
+h2{
+
+margin: 0;
+    padding: 0 0 20px;
+    text-align: top;
+    font-size: 22px;
+}
+
+div.about {
+position :fixed;
+  right: 30px;
+  bottom:0;
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: top;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  3px solid #73AD21;
+}
+
+
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 600;
+  margin-right: 0;
+  font-weight: bold;
+}
